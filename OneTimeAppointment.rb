@@ -1,3 +1,5 @@
+require_relative ('Appointment')
+
 class OneTimeAppointment < Appointment
     def initialize(location, purpose, hour, min, day, month, year)
         super(location, purpose, hour, min)

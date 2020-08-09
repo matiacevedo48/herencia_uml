@@ -1,3 +1,5 @@
+require_relative ('Appointment')
+
 class DailyAppointment < Appointment
     def occurs_on?(hour, min)
         hour.to_i == self.hour && min.to_i == self.min ? true : false
